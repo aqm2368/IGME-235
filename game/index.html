@@ -1,29 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Dig Dug</title>
+    <title>DIG DUG</title>
+    <link rel="icon" type="image/x-icon" href="/game/images/taizo_hori.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
     h1 { 
         color:red;
         font-family: sans-serif;
+        text-decoration: underline;
         border-bottom: 1px solid blue;
-        }
+    }
+    h2 {
+        color: darkblue;
+        margin-left: 2vw;;
+    }
+    p {
+        margin-left: 3vw;
+    }
+    a {
+        margin-left: 3vw;
+    }
+    hr {
+        margin: 0;
+    }
     blockquote { 
         background-color: lightgray;
         padding: 1rem;
-        }
+    }
+    body {
+        background-color: lightblue;
+        margin: 0;
+    }
+    .bordered-image {
+        border: 4px solid black;
+        max-width: 30vw;
+        height: auto;
+    }
+    .side-image {
+        float: right;
+        margin: 10px 8vw;
+        max-width: 30vw;
+        height: auto;
+    }
+    .hori-container {
+        display: flex;
+    }
     </style>
 </head>
 <body>
     <header>
         <h1>Dig Dug</h1>
+        <a href="/game/big/pic1.html">
+            <figure>
+                <img src="/game/images/dig-dug.svg" alt="Dig Dug Logo" style="width: 30rem;"/>
+            </figure>
+        </a>
+    <!-- <img src="/game/images/dig-dug.png" alt="Title Image" style="width: 30rem;"/> -->
     </header>
     <main>
-        <figure>
-            <img src="dig-dug-burnt.png" alt="Dig Dug Logo" style="border: 1px solid #000000"/>
-        </figure>
+        <!-- <a href="/game/big/pic1.html">
+            <figure>
+                <img src="dig-dug-burnt.png" alt="Dig Dug Logo" style="border: 1px solid #000000"/>
+            </figure>
+        </a> -->
         <hr>
         <h2>Publishing Info</h2>
         <ul>
@@ -32,19 +73,33 @@
             <li>Released: Apr, 1982</li>
         </ul>
         <hr>
-        <h2>Description</h2>
-        <p>Dig Dug is a <strong>1-2 player</strong> arcade game in which you have to use your shovel to dig your way through the earth.
-            <br>Stopping you from doing this are two monsters, called <em>Pooka</em> and <em>Fygar</em>, who will continually chase you around.
-            <br>The only weapon that you carry is an air pump, which you can use to inflate the monsters to the point where they explode. [...]
-        </p>
+        <div class="hori-container">
+            <div>
+                <h2>Description</h2>
+                <p style="max-width: 30em;">
+                    Dig Dug is a <strong>1-2 player</strong> arcade game in which you have to use your shovel to dig your way through the earth.
+                    Stopping you from doing this are two monsters, called <em>Pooka</em> and <em>Fygar</em>, who will continually chase you around.
+                    The only weapon that you carry is an air pump, which you can use to inflate the monsters to the point where they explode. [...]
+                </p>
+            </div>
+            <figure>
+                <img class="side-image" src="/game/images/fygar_inflate_transparent.png" alt="Fygare Inflate"/>
+            </figure>
+        </div>
+        
         <hr>
-        <h2>Game Categories</h2>
-        <ul>
-            <li>Genre: Action</li>
-            <li>Perspective: Side view</li>
-            <li>Visual: Fixed</li>
-            <li>Gameplay: Arcade</li>
-        </ul>
+        <div class="hori-container">
+            <img class="side-image bordered-image" src="/game/images/dig-dug-archives.png" alt="Official Photo"/>
+            <div>
+                <h2>Game Categories</h2>
+                <ul>
+                    <li>Genre: Action</li>
+                    <li>Perspective: Side view</li>
+                    <li>Visual: Fixed</li>
+                    <li>Gameplay: Arcade</li>
+                </ul>
+            </div>
+        </div>
         <hr>
         <h2>Quote</h2>
         <p>This definitely goes under the heading of</p>
@@ -52,13 +107,20 @@
             </blockquote> 
         <p>or at least had a good imagination. And maybe they were into horror movies too.
             <br>
-            <em>&emsp;-- https://www.mobygames.com/mobyrank/source/sourceId,540/</em>
+            <em>
+                &emsp;-- 
+                <a href="https://www.mobygames.com/mobyrank/source/sourceId,540/" target="_blank">
+                    https://www.mobygames.com/mobyrank/source/sourceId,540/
+                </a>
+            </em>
         </p>
     </main>
     <footer>
         <hr>
-        <h2>Source</h2>
-        <cite>https://www.mobygames.com/game/arcade/dig-dug</cite>
+        <h2 id="source">Source</h2>
+        <a href="https://www.mobygames.com/game/arcade/dig-dug" target="_blank">
+            <cite>https://www.mobygames.com/game/arcade/dig-dug</cite>
+        </a>
     </footer>
 </body>
 </html>
