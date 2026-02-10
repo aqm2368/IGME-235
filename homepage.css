@@ -1,0 +1,99 @@
+body {
+    padding: 0%;
+    margin: 0%;
+}
+footer {
+    padding: 10px 20px;
+    display: flex;
+    gap: 4vw;
+    margin-top: 30px;
+    padding-bottom: 50px;
+    background-color: rgb(17, 17, 17);
+    color: white;
+}
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 750;
+    text-decoration: underline;
+    text-align: center;
+    line-height: 10px;
+}
+.footer-header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+    font-weight: 800;
+}
+.footer-anchor {
+    line-height: 30px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.hori-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7vw;
+    padding: 20px 0;
+}
+.verti-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7vw;
+}
+#selfie {
+    max-width: 250px;
+    height: auto;
+    border: solid black 2px;
+    border-radius: 10px;
+}
+.bio {
+    max-width: 22rem;
+    text-align: left;
+}
+#projects {
+    padding-top: 20px;
+}
+#main-header {
+    background-color: rgb(0, 79, 66);
+    margin: 0%;
+    padding: 10px 4vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    border-bottom: rgb(0, 0, 0) double 4px;
+}
+#logo-icon {
+    max-width: 8vw;
+    height: auto;
+}
+.short-break {
+    line-height: 10px;
+}
+.half-rule {
+    max-width: 40vw;
+}
+.project-thumbnail {
+    max-width: 15vw;
+}
+.centered-url {
+    text-align: center;
+}
+a:link {
+    color: rgb(0, 155, 114);
+}
+a:visited { 
+    color: rgb(0, 97, 71);
+}
+a:hover { 
+    color: rgb(2, 176, 129);
+}
+a:active { 
+    color: rgba(0, 207, 152, 0.501);
+}
+a:focus { 
+    color: rgba(0, 187, 137, 0.481);
+}
