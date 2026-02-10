@@ -1,0 +1,21 @@
+#tetlist {
+    border: 0px;
+}
+.tet {
+    border: 0px;
+}
+.long {
+    border: 0px;
+}
+.square {
+    border: 0px;
+}
+.name {
+    border: 0px;
+}
+.aliases {
+    border: 0px;
+}
+h1, h2, h3, h4, h5, h6 {
+    border-bottom: solid red 2px;
+}
