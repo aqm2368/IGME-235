@@ -1,39 +1,43 @@
-#tetlist {
-    border: 0px;
-}
-.tet {
-    width: 19%;
-    float: left;
-    border: solid green 2px;
-}
-.long {
-    border: 0px;
-}
-.square {
-    border: 0px;
-}
-.name {
-    border: 0px;
-}
-.aliases {
-    border: 0px;
-}
-h2 {
-    border-bottom: solid red 2px;
-    clear: right;
-}
 figure {
-    float: right;
-    width: 40%;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
 }
 figure > img {
-    width: 100%;
-    height: auto;
+    max-width: 100%;
 }
-footer {
-    clear: left;
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    z-index: -1;
+header, main, footer {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+#tetlist {
+    display: flex;
+    flex-flow: row wrap;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tet {
+    flex: 0 1 300px;
+}
+.long {
+    flex: 0 1 360px;
+}
+.square {
+    flex: 0 1 240px;
+}
+.tet > img {
+    width: 60%;
+}
+.name {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: larger;
+    font-weight: bolder;
+}
+.aliases {
+    text-align: left;
+    margin: 1em;
 }

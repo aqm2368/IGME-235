@@ -1,0 +1,39 @@
+#tetlist {
+    border: 0px;
+}
+.tet {
+    width: 19%;
+    float: left;
+    border: solid green 2px;
+}
+.long {
+    border: 0px;
+}
+.square {
+    border: 0px;
+}
+.name {
+    border: 0px;
+}
+.aliases {
+    border: 0px;
+}
+h2 {
+    border-bottom: solid red 2px;
+    clear: right;
+}
+figure {
+    float: right;
+    width: 40%;
+}
+figure > img {
+    width: 100%;
+    height: auto;
+}
+footer {
+    clear: left;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+}
