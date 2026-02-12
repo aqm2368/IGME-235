@@ -2,7 +2,9 @@
     border: 0px;
 }
 .tet {
-    border: 0px;
+    width: 19%;
+    float: left;
+    border: solid green 2px;
 }
 .long {
     border: 0px;
@@ -16,6 +18,22 @@
 .aliases {
     border: 0px;
 }
-h1, h2, h3, h4, h5, h6 {
+h2 {
     border-bottom: solid red 2px;
+    clear: right;
+}
+figure {
+    float: right;
+    width: 40%;
+}
+figure > img {
+    width: 100%;
+    height: auto;
+}
+footer {
+    clear: left;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
 }
