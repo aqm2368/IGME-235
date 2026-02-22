@@ -1,0 +1,153 @@
+/* It starts completely empty. I wish you luck. */
+body {
+    margin: 0 1rem;
+}
+
+#logo {
+  width: 500px;
+  height: 345px;
+  background: url(../images/tetris-logo.png) no-repeat;
+  text-indent: -9999px;
+}
+
+#wrapper {
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+    "logo" 
+    "menu" 
+    "intro" 
+    "playground" 
+    "footer";
+}
+
+@media screen and (min-width: 850px) {
+    #wrapper {
+        grid-template-columns: 500px 1fr;
+        grid-template-rows: 345px auto auto auto auto;
+        grid-template-areas:
+            "logo       intro"
+            "menu       menu"
+            "playground playground"
+            "footer     footer";  
+    }
+}
+
+ul.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    display: block;
+    background: gray;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.1s ease-in;
+}
+
+.menu li {
+    width: 25%;
+}
+
+.menu .submenu li>a:hover {
+    background:red;
+    color:yellow;
+}
+
+.menu .submenu>a:after {
+    content: "+";
+    padding-left:5px;
+}
+
+@media screen and (max-width: 550px) {
+	.menu li {
+		width: 100%;
+	}
+}
+
+.menu a:hover {
+	background: red;
+	color: yellow;
+    transform:scale(1.1);
+}
+
+h1.game { 
+    grid-area: logo; 
+}
+ul.menu { 
+    grid-area: menu; 
+}
+#introduction { 
+    grid-area: intro; 
+    margin: 2rem;
+}
+#tetgrid { 
+    grid-area: playground; 
+}
+footer { 
+    grid-area: footer; 
+}
+
+#tetgrid {
+    display: grid;
+    grid-template-columns: repeat(6, 100px);
+    grid-template-rows: repeat(6, 100px);
+}
+
+#o {
+    grid-column: 1/3;
+    grid-row: 1/span 2;
+}
+
+#i {
+    grid-column: 3/-1;
+    transform-origin: 200px 50px;
+    grid-row: span 1;
+}
+
+#z img {
+    transform-origin: 0 0;
+    transform:  translateX(205px) rotate(90deg);
+}
+
+#z {
+    grid-column: 2/span 2;
+    grid-row: 2/span 3;
+}
+
+#l img {
+    transform-origin: 0 0;
+    transform: translateY(105px) rotate(-90deg);
+}
+
+#l {
+    grid-column: 1/span 2;
+}
+
+#s img {
+    transform-origin: 150px 100px;
+    transform: translate(55px, 50px) rotate(90deg);
+}
+
+#s {
+    grid-column: 4/span 3;
+    grid-row: 3/span 2;
+}
+
+#t img {
+    transform: translateY(-100px) rotate(180deg);
+}
+
+img {
+    transition-property: rotate;
+    transition-duration: 2s;
+}
+
+img:hover {
+    rotate: -180deg;
+}
